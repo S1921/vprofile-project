@@ -9,7 +9,7 @@
       yum:
         name: java-1.8.0-openjdk.x86_64
         state: present
-      when: ansible_distribution == 'CentOS'
+      when: ansible_distribution == 'Linux'
 
     - name: Install JDK on Ubuntu 14/15/16/18
       apt:
